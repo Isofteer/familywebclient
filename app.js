@@ -1,7 +1,9 @@
 $(document).ready(()=>{
 
-  OpenLoginPage();
-
+ // $("#sessionid").val(res.rows[0].ipkmembercode);
+ 
+  $("#sessionid").val(21);
+  OpenDashboard();
 })
 
 function OpenLoginPage(){
