@@ -4,14 +4,16 @@ html,body{
     font-size: 12px;
 }
 #parent-container,#dashboard {
-    height: 100%;
    
+  
 }
 
 #dashboard{
  color: unset
 }
-
+.row-override{
+    margin: 0 !important
+}
 .widget{
     width: 450px;
    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);  
@@ -130,4 +132,242 @@ flex-flow: row wrap
 .boxshadow{
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);  
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.logged-user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.left-section,.flex-column{    
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   
+}
+.flex-column{
+  
+}
+.app_bar,.main-actions{
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 50x 7px;
+    align-items: center
+    
+}
+.sub-widget{
+    display: flex;
+    padding: 10px;;
+    align-items: center;
+    cursor: pointer;
+
+}
+.sub-widget:hover{
+    color:teal;
+}
+.left-content{
+     margin-top:10px;
+    align-self: stretch;
+}
+.dashboard-summary{
+    border-top-style: solid;
+    border-width: 0.5;
+    border-color: rgba(0,0,0,.2);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.dashboard-summary ul{
+    padding: 0
+}
+.info-tag{
+    width: 100%
+}
+.info-tag h4{
+    font-weight: bolder;
+    font-size: 30px
+}
+
+.curr-username{
+    padding: 10px 0;
+    font-weight: bolder;
+    font-size: 14px
+}
+.notification{
+    display: flex;
+    justify-content: space-evenly
+}
+.not-circle{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border-style: solid;
+    font-size: 16px;
+    border-color:rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.row.relate{
+    display: flex;
+    align-items: center;
+    justify-content: center
+} 
+.relation-container{   
+    width:50%;
+    padding:5px;
+    background-color: #EFEFEF;
+}
+.search-box {
+background-color:rgba(228, 220, 220, 0.2);
+display: flex;
+align-items: center;
+color:gray;
+height: 40px;
+border-radius: 20px
+
+
+
+}
+.search-box  input{
+  
+    height: 100%;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    flex: 1;   
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center
+}
+
+.search-box  i{
+    margin-right: 15px;
+    cursor: pointer;
+    color:teal;
+    font-size:14px
+}
+.btn-options-container input{
+   padding:7px 5px;
+   border-width: 0;
+   border-style: solid;
+   width:100px;
+   border-radius:4px;
+   font-weight: 600;
+   outline: none;
+   
+}
+.relation-items{
+    display: flex;
+    flex-flow: column
+  
+}
+
+.relation-items .items{ 
+    margin-right:10px
+}
+
+.relation-actions{
+    display: flex;
+    flex-flow: row-reverse
+}
+.relation-actions input{
+    margin-right:10px
+}
+
+.login,.register{
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.i-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top:0;
+    left: 0;
+    right:0
+
+}
+.i-container div{
+    margin-right:10px
+}
+.login-clrcle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-section .input{
+ display: flex;
+ align-items: center;
+
+}
+
+.login-section .input i{
+    font-size: 20px;
+    margin-right:10px;
+    /* width:40px */
+}
+.login-section{
+    display: flex;
+    flex-flow: column;
+  justify-content: space-evenly;
+}
+.login-section .element{
+    margin-top:10px
+}
+.element.input{
+background-color:rgba(0, 0, 0, 0.2);
+display: flex;
+align-items: center;
+color:gray;
+height:35px;
+border-radius: 20px
+}
+.element.input input{
+    flex: 1;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    height: 100%;
+}
+.element.input i{
+    margin-left:10px
+}
+
+.login-action {
+    display: flex;
+    flex-flow: column;
+    align-items: center
+}
+.login-action input{
+background-color:green;
+color:white;
+text-align: center;
+height: 30px;
+border-radius: 15px;
+width: 80%;
+outline: none;
+}
+
+.login-action a{
+    cursor: pointer
+}
+
+.login .details{
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+
 }

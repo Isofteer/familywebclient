@@ -1,16 +1,64 @@
 
 
 <div id="dashboard">
-        <div class="row">
+        <div class="row row-override" >
             <!-- my particulars here -->
-          <div class="col-md-2">
-                  hey there
+          <div class="col-md-3">
+            
+                    <div class="left-section">                       
+                       
+                        <div class="profile-header flex-column">
+                          <div class="logged-user">
+                                <img   width="300" src="./assets/img/photo.jpg" alt="My image" srcset="">                                                     
+                          </div>
+                          <span  class ="curr-username"> Tonnie Anthony</span>
+                        </div>
+                        <div class ="left-content">
+                            <div class="notification">
+                                    <div class="not-circle"> <i class="fa fa-bell" aria-hidden="true"></i></div>
+                                    <div class="not-circle"><i class="fa fa-comment" aria-hidden="true"></i></div>    
+                                    <div class="not-circle"> <i class="fa fa-comments" aria-hidden="true"></i></div>                           
+                            </div>
+                        </div>
+                        <div class ="left-content">
+                            <div class="personal-info">
+                                    <ul class="">
+                                        <li class="sub-widget">
+                                        <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp; <span> Settings</span>
+                                        </li>
+                                        <li class="sub-widget" onclick="return OpenAddMember(true);">
+                                                <i  class="fa fa-plus" aria-hidden="true"></i>  &nbsp;&nbsp;<span> Add Member</span>
+                                        </li>
+                                        <li class="sub-widget" onclick="return OpenAddMember(false);">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>  &nbsp;&nbsp;<span> Distant Relatives</span>
+                                         </li>
+                                        </ul>
+                            </div>
+                          <div class="dashboard-summary">
+                                <ul>
+                                        <li class="sub-widget info-tag boxshadow">
+                                            <h4> 10</h4>  &nbsp;&nbsp; <span>Bothers</span>
+                                        </li>
+                                        <li class="sub-widget info-tag boxshadow">
+                                             <h4> 10</h4> &nbsp;&nbsp; <span>Sisters</span>
+                                         </li>
+                                         <li class="sub-widget info-tag boxshadow">
+                                                 <h4> 10</h4>  &nbsp;&nbsp; <span>Uncles</span>
+                                             </li>
+                                        <li class="sub-widget info-tag boxshadow">
+                                            <h4> 10</h4>  &nbsp;&nbsp; <span>Aunties</span>
+                                        </li>
+                                    </ul>
+                          </div>
+                        </div>
+
+                    </div>            
           </div>
     
     
            <!-- main content -->
-          <div class="col-md-10">
-                <div  class="row">
+          <div class="col-md-9">
+                <div style="display:"  class="row loaded-relation">
                         <div class="col-md-6">
                               <!-- start of parents -->
                               <div class="widget"> 
@@ -18,12 +66,12 @@
                                           <h4> Parents </h5>
                                       </span>
                                       <div class="widget-content">
-                                      <div class=" widget-dual-row">
-                                          <div class="sub-content">
+                                      <div  class=" widget-dual-row ">
+                                          <div id="father" class="sub-content">
                                                   <div class="sub-content-header">
                                                       <div class="sub-cont-items">
-                                                          <span class="first-name">Willie</span> 
-                                                          <span> <br/>Mutai Kiprono</span> 
+                                                          <span class="first-name">Willie</span>  <br/>
+                                                          <span class ="other-names">Mutai Kiprono</span> 
                                                       </div>
                                                           <span class="dp-style sub-cont-items"> 
                                                                   <img  class="member-image" width="150" src="./assets/img/man2.jpg" alt="father image" srcset=""> 
@@ -41,14 +89,14 @@
                                                               <img  class="member-image" width="" src="./assets/img/male.png" alt="father image" srcset=""> 
                                                       </div>
                                           </div>
-                                          <div class="sub-content">
+                                          <div  id="mother" class="sub-content">
                                                   <div class="sub-content-header">
                                                       <span class="dp-style sub-cont-items"> 
                                                       <img  class="member-image" width="" src="./assets/img/woman1.jpg" alt="father image" srcset=""> 
                                                       </span>
                                                       <div class="sub-cont-items">
-                                                          <span class="first-name">Happiness</span> 
-                                                          <span> <br/>Mutai Elinansha</span> 
+                                                          <span class="first-name"></span> </br>
+                                                          <span class ="other-names"></span> 
                                                       </div>
                                                       
                                                   </div>
@@ -78,14 +126,14 @@
                                      <table style="width:100%" class="widget-list">
                                          <thead> <th></th> <th> Grand Father </th> <th>Grand Mother</th></thead>
                                          <tbody>
-                                             <tr>
+                                             <tr class="grandparents father">
                                                   <td class="relation-label"> Father Lineage </td>
                                                   <td> 
-                                                  <div class="sub-content">
+                                                  <div  id ="" class="sub-content grand-father">
                                                           <div class="sub-content-header">
                                                               <div class="sub-cont-items">
-                                                                  <span class="first-name">Willie</span> 
-                                                                  <span> <br/>Mutai Kiprono</span> 
+                                                                  <span class="first-name"></span>  <br/>
+                                                                  <span class="other-names"> </span> 
                                                               </div>
                                                                 <span class="dp-style sub-cont-items"> 
                                                                         <img  class="member-image" width="150" src="./assets/img/man2.jpg" alt="father image" srcset=""> 
@@ -105,14 +153,14 @@
                                                    </div>
                                              </td> 
                                              <td>
-                                                  <div class="sub-content">
+                                                  <div class="sub-content grand-mother">
                                                           <div class="sub-content-header">
                                                               <span class="dp-style sub-cont-items"> 
                                                               <img  class="member-image" width="" src="./assets/img/woman1.jpg" alt="father image" srcset=""> 
                                                               </span>
                                                               <div class="sub-cont-items">
-                                                                  <span class="first-name">Happiness</span> 
-                                                                  <span> <br/>Mutai Elinansha</span> 
+                                                                  <span class="first-name"></span> <br/>
+                                                                  <span class="other-names">  </span> 
                                                               </div>
                                                                 
                                                           </div>
@@ -128,17 +176,16 @@
                                                               <img  class="member-image" width="" src="./assets/img/female.png" alt="father image" srcset=""> 
                                                         </div>
                                                    </div>
-                                             </td></tr>
-                      
+                                          
                                             
-                                             <tr class="lower-bounds" > 
+                                             <tr class="lower-bounds grandparents mother " > 
                                                   <td class="relation-label"> Mother Lineage </td>
                                                  <td class=""> 
-                                                  <div class="sub-content">
+                                                  <div class="sub-content grand-father">
                                                           <div class="sub-content-header">
                                                               <div class="sub-cont-items">
-                                                                  <span class="first-name">Willie</span> 
-                                                                  <span> <br/>Mutai Kiprono</span> 
+                                                                    <span class="first-name"></span> <br/>
+                                                                    <span class="other-names">  </span> 
                                                               </div>
                                                                 <span class="dp-style sub-cont-items"> 
                                                                         <img  class="member-image" width="150" src="./assets/img/man2.jpg" alt="father image" srcset=""> 
@@ -158,14 +205,14 @@
                                                    </div>
                                              </td> 
                                              <td>
-                                                  <div class="sub-content">
+                                                  <div class="sub-content grand-mother">
                                                           <div class="sub-content-header">
                                                               <span class="dp-style sub-cont-items"> 
                                                               <img  class="member-image" width="" src="./assets/img/woman1.jpg" alt="father image" srcset=""> 
                                                               </span>
                                                               <div class="sub-cont-items">
-                                                                  <span class="first-name">Happiness</span> 
-                                                                  <span> <br/>Mutai Elinansha</span> 
+                                                                    <span class="first-name"></span> <br/>
+                                                                    <span class="other-names">  </span>  
                                                               </div>
                                                                 
                                                           </div>
@@ -197,100 +244,9 @@
                               <span class="widget-title">
                                   <h4>Siblings</h5>
                               </span>
-                              <div class="widget-content">
+                              <div id="siblings" class="widget-content">
                                   <div class="list-gallary">
-                                          <div class="sub-content listing">
-                                                  <div class="sub-content-header">
-                                                      <div class="sub-cont-items">
-                                                          <span class="first-name">Willie</span> 
-                                                          <span> <br/>Mutai Kiprono</span> 
-                                                      </div>
-                                                        <span class="dp-style sub-cont-items"> 
-                                                                <img  class="member-image" width="150" src="./assets/img/man2.jpg" alt="father image" srcset=""> 
-                                                        </span>
-                                                  </div>
-                                                  <div class="widget-info">                                               
-                                                        <div class="more-details">
-                                                                Nairobi /Karen
-                                                           </div>
-                                                           <div style="padding:5px 8px;margin-left: auto;">
-                                                                <span class="age-emph">32 </br><sub style="font-size:11px">Years</sub></span>
-                                                          </div>
-                                                      </div>
-                                                      <div class="gender-marker"> 
-                                                            <img  class="member-image" width="" src="./assets/img/male.png" alt="father image" srcset=""> 
-                                                      </div>
-                                           </div>
-                
-                
-                                           <div class="sub-content listing">
-                                                  <div class="sub-content-header">
-                                                      <div class="sub-cont-items">
-                                                          <span class="first-name">Willie</span> 
-                                                          <span> <br/>Mutai Kiprono</span> 
-                                                      </div>
-                                                        <span class="dp-style sub-cont-items"> 
-                                                                <img  class="member-image" width="150" src="./assets/img/man2.jpg" alt="father image" srcset=""> 
-                                                        </span>
-                                                  </div>
-                                                  <div class="widget-info">                                               
-                                                        <div class="more-details">
-                                                                Nairobi /Karen
-                                                           </div>
-                                                           <div style="padding:5px 8px;margin-left: auto;">
-                                                                <span class="age-emph">32 </br><sub style="font-size:11px">Years</sub></span>
-                                                          </div>
-                                                      </div>
-                                                      <div class="gender-marker"> 
-                                                            <img  class="member-image" width="" src="./assets/img/male.png" alt="father image" srcset=""> 
-                                                      </div>
-                                           </div>
-                
-                                           <div class="sub-content listing">
-                                                  <div class="sub-content-header">
-                                                      <div class="sub-cont-items">
-                                                          <span class="first-name">Willie</span> 
-                                                          <span> <br/>Mutai Kiprono</span> 
-                                                      </div>
-                                                        <span class="dp-style sub-cont-items"> 
-                                                                <img  class="member-image" width="150" src="./assets/img/man2.jpg" alt="father image" srcset=""> 
-                                                        </span>
-                                                  </div>
-                                                  <div class="widget-info">                                               
-                                                        <div class="more-details">
-                                                                Nairobi /Karen
-                                                           </div>
-                                                           <div style="padding:5px 8px;margin-left: auto;">
-                                                                <span class="age-emph">32 </br><sub style="font-size:11px">Years</sub></span>
-                                                          </div>
-                                                      </div>
-                                                      <div class="gender-marker"> 
-                                                            <img  class="member-image" width="" src="./assets/img/male.png" alt="father image" srcset=""> 
-                                                      </div>
-                                           </div>
-                
-                                           <div class="sub-content listing">
-                                                  <div class="sub-content-header">
-                                                      <div class="sub-cont-items">
-                                                          <span class="first-name">Willie</span> 
-                                                          <span> <br/>Mutai Kiprono</span> 
-                                                      </div>
-                                                        <span class="dp-style sub-cont-items"> 
-                                                                <img  class="member-image" width="150" src="./assets/img/man2.jpg" alt="father image" srcset=""> 
-                                                        </span>
-                                                  </div>
-                                                  <div class="widget-info">                                               
-                                                        <div class="more-details">
-                                                                Nairobi /Karen
-                                                           </div>
-                                                           <div style="padding:5px 8px;margin-left: auto;">
-                                                                <span class="age-emph">32 </br><sub style="font-size:11px">Years</sub></span>
-                                                          </div>
-                                                      </div>
-                                                      <div class="gender-marker"> 
-                                                            <img  class="member-image" width="" src="./assets/img/male.png" alt="father image" srcset=""> 
-                                                      </div>
-                                           </div>
+                                        
                                   </div>
                               </div>
                     </div>
@@ -301,13 +257,13 @@
                         <span class="widget-title">
                                 <h4>Uncles &  Aunties </h5>
                          </span>
-                         <div class="widget-content">
+                         <div class="widget-content unclesandaunties">
                             <table style="width: 100%">
                                <thead>  <th></th> <th>Uncles</th> <th>Aunties</th> </thead>
                                <tbody>
-                                  <tr>
+                                  <tr class="father-row">
                                         <td> By Father </td> 
-                                        <td>
+                                        <td class="uncles">
                                             <ul>
                                                 <li  class="boxshadow">
                                                     <div class ="widget-dual-row flex-left">
@@ -316,8 +272,8 @@
                                                                             <img  class="member-image" width="150" src="./assets/img/man2.jpg" alt="father image" srcset=""> 
                                                                     </span>
                                                                     <div class="sub-cont-items">
-                                                                        <span class="first-name">Willie</span> 
-                                                                        <span> <br/>Mutai Kiprono</span> 
+                                                                        <span class="first-name">Willie</span>  <br/>
+                                                                        <span class="other-names"> Mutai Kiprono</span> 
                                                                     </div>
                                                                       
                                                                 </div>
@@ -325,123 +281,24 @@
                                                 </li>
                                             </ul>
                                         </td> 
-                                        <td> 
+                                        <td class="aunties">
                                                 <ul>
-                                                        <li  class="boxshadow">
-                                                            <div class ="widget-dual-row flex-left">
-                                                                    <div class="sub-content-header">
-                                                                            <span class="dp-style sub-cont-items"> 
-                                                                                    <img  class="member-image" width="150" src="./assets/img/woman1.jpg" alt="father image" srcset=""> 
-                                                                            </span>
-                                                                            <div class="sub-cont-items">
-                                                                                <span class="first-name">Willie</span> 
-                                                                                <span> <br/>Mutai Kiprono</span> 
-                                                                            </div>
-                                                                              
-                                                                        </div>
-                                                            </div>
-                                                        </li>
-
-                                                        <li  class="boxshadow">
-                                                                <div class ="widget-dual-row flex-left">
-                                                                        <div class="sub-content-header">
-                                                                                <span class="dp-style sub-cont-items"> 
-                                                                                        <img  class="member-image" width="150" src="./assets/img/woman1.jpg" alt="father image" srcset=""> 
-                                                                                </span>
-                                                                                <div class="sub-cont-items">
-                                                                                    <span class="first-name">Willie</span> 
-                                                                                    <span> <br/>Mutai Kiprono</span> 
-                                                                                </div>
-                                                                                  
-                                                                            </div>
-                                                                </div>
-                                                            </li>
-
-                                                            <li  class="boxshadow">
-                                                                    <div class ="widget-dual-row flex-left">
-                                                                            <div class="sub-content-header">
-                                                                                    <span class="dp-style sub-cont-items"> 
-                                                                                            <img  class="member-image" width="150" src="./assets/img/woman1.jpg" alt="father image" srcset=""> 
-                                                                                    </span>
-                                                                                    <div class="sub-cont-items">
-                                                                                        <span class="first-name">Willie</span> 
-                                                                                        <span> <br/>Mutai Kiprono</span> 
-                                                                                    </div>
-                                                                                      
-                                                                                </div>
-                                                                    </div>
-                                                                </li>
-                                                    </ul>
+                                                    
+                                                </ul>
                                         </td> 
                                   </tr>
 
-                                  <tr>
+                                  <tr class="mother-row lower-bounds">
                                         <td> By Mother </td> 
-                                        <td>
+                                        <td class="uncles">
                                             <ul>
-                                                <li  class="boxshadow">
-                                                    <div class ="widget-dual-row flex-left">
-                                                            <div class="sub-content-header">
-                                                                    <span class="dp-style sub-cont-items"> 
-                                                                            <img  class="member-image" width="150" src="./assets/img/man2.jpg" alt="father image" srcset=""> 
-                                                                    </span>
-                                                                    <div class="sub-cont-items">
-                                                                        <span class="first-name">Willie</span> 
-                                                                        <span> <br/>Mutai Kiprono</span> 
-                                                                    </div>
-                                                                      
-                                                                </div>
-                                                    </div>
-                                                </li>
+                                               
                                             </ul>
                                         </td> 
-                                        <td> 
-                                                <ul>
-                                                        <li  class="boxshadow">
-                                                            <div class ="widget-dual-row flex-left">
-                                                                    <div class="sub-content-header">
-                                                                            <span class="dp-style sub-cont-items"> 
-                                                                                    <img  class="member-image" width="150" src="./assets/img/woman1.jpg" alt="father image" srcset=""> 
-                                                                            </span>
-                                                                            <div class="sub-cont-items">
-                                                                                <span class="first-name">Willie</span> 
-                                                                                <span> <br/>Mutai Kiprono</span> 
-                                                                            </div>
-                                                                              
-                                                                        </div>
-                                                            </div>
-                                                        </li>
-
-                                                        <li  class="boxshadow">
-                                                                <div class ="widget-dual-row flex-left">
-                                                                        <div class="sub-content-header">
-                                                                                <span class="dp-style sub-cont-items"> 
-                                                                                        <img  class="member-image" width="150" src="./assets/img/woman1.jpg" alt="father image" srcset=""> 
-                                                                                </span>
-                                                                                <div class="sub-cont-items">
-                                                                                    <span class="first-name">Willie</span> 
-                                                                                    <span> <br/>Mutai Kiprono</span> 
-                                                                                </div>
-                                                                                  
-                                                                            </div>
-                                                                </div>
-                                                            </li>
-
-                                                            <li  class="boxshadow">
-                                                                    <div class ="widget-dual-row flex-left">
-                                                                            <div class="sub-content-header">
-                                                                                    <span class="dp-style sub-cont-items"> 
-                                                                                            <img  class="member-image" width="150" src="./assets/img/woman1.jpg" alt="father image" srcset=""> 
-                                                                                    </span>
-                                                                                    <div class="sub-cont-items">
-                                                                                        <span class="first-name">Willie</span> 
-                                                                                        <span> <br/>Mutai Kiprono</span> 
-                                                                                    </div>
-                                                                                      
-                                                                                </div>
-                                                                    </div>
-                                                                </li>
-                                                    </ul>
+                                        <td class="aunties">
+                                                <ul>                                                       
+                                                   
+                                                </ul>
                                         </td> 
                                   </tr>
                                </tbody>
@@ -452,7 +309,90 @@
                   </div>
                  </div>
               
-         
+            <div class="row relate  " style="display:none">               
+                
+                <div class="relation-container boxshadow">
+                  <h3>Member Association form</h3>
+                   <div class="container-found-box">
+                      
+                       <section>
+                           <div style="margin-top: 20px;">
+                               <span> Provide Phone or National ID</span>
+                                <div style="flex:1"  class="search-box boxshadow"> <input value ="34343" class="search" placeholder="" id ="txtLinkageId" type="text"> 
+                                    <i onclick="return SearchMmember()" class="fa fa-search" aria-hidden="true">      </i> 
+                                </div>
+                           </div>
+                           <div style="display:" id="person-result">
+                             
+                          </div>
+                           <div >
+                                <h5>Who is he to you  </h5>                        
+                                 <div class="relation-items" >
+                                    <div>  <p> A Parent</p> 
+                                            <div style="display:flex;justify-content: start">
+                                                    <label class="radiocontainer items">Father
+                                                        <input checked value="father"  name="relative" type="radio">
+                                                        <span class="checkmark"></span>
+                                                        </label>     
+                                                    <label class="radiocontainer items">Mother
+                                                            <input  value="mother"  name="relative" type="radio">
+                                                            <span class="checkmark"></span>
+                                                            </label>                              
+                                               </div>
+                                    </div>
+                                    <div>  <p> A Sibling</p> 
+                                        <div style="display:flex;justify-content: start">
+                                                <label class="radiocontainer items">Brother
+                                                    <input checked value="brother"  name="relative" type="radio">
+                                                    <span class="checkmark"></span>
+                                                    </label>     
+                                                <label class="radiocontainer items">Sister
+                                                        <input  value="sister"  name="relative" type="radio">
+                                                        <span class="checkmark"></span>
+                                                        </label>                              
+                                           </div>
+                                </div>
+                                <div>  <p> A grand Parent</p> 
+                                    <div style="display:flex;justify-content: start">
+                                            <label class="radiocontainer items">Grand father
+                                                <input checked value="grandfather"  name="relative" type="radio">
+                                                <span class="checkmark"></span>
+                                                </label>     
+                                            <label class="radiocontainer items">Grand mother
+                                                    <input  value="grandmother"  name="relative" type="radio">
+                                                    <span class="checkmark"></span>
+                                                    </label>                              
+                                       </div>
+                                 </div>
+
+                                 <div>  <p> An Auncle or Auntie </p> 
+                                    <div style="display:flex;justify-content: start">
+                                            <label class="radiocontainer items"> Uncle
+                                                <input checked value="uncle"  name="relative" type="radio">
+                                                <span class="checkmark"></span>
+                                                </label>     
+                                            <label class="radiocontainer items">Auntie
+                                                    <input  value="auntie"  name="relative" type="radio">
+                                                    <span class="checkmark"></span>
+                                                    </label>                              
+                                       </div>
+                                 </div>
+                                 <div class="relation-actions">                                       
+                                   <input id = "saveRelation" value="Save " type="button">
+                                   <input onclick="return OpenAddMember(false);" id = "cancelRelation" value="Cancel " type="button">
+                                 </div>
+                                </div>
+                               
+                           </div>
+                         
+                       </section>
+
+                   </div>
+
+                </div>
+                
+                
+                </div>
           </div>
         </div>
     </div>

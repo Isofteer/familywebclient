@@ -1,42 +1,97 @@
-<div  class="register i-container" id="register">              
-                <form style="width:50%" class="register-section form-group">
-                   <div class="element">
-                      <h3>Please Register</h3>
-                   </div>
-
-                   <div class="">
-                        <input  value ="tonnioe" placeholder="firstname" class="form-control col-md-6" type="text" name="" id="r_firstname">
-                   </div>
-                   <div class="element">
-                        <input va;ue="roy"  placeholder="surname"class="form-control col-md-6" type="text" name="" id="r_surname">
-                    </div>
-                    <div class="element">
-                            <input  placeholder="middlename"class="form-control col-md-6" type="text" name="" id="r_middlename">
-                     </div>
-                     <div class="element">
-                            <input value="1992-12-12 6:4:4"  placeholder="1992-12-12"class="form-control col-md-6" type="text" name="" id="r_dateofbirth">
-                     </div>
-                     <div class="element">
-                           <select class="form-control" name="" id="r_gender" >
-                               <option  selected value="MALE">Male</option>
-                               <option value="FEMALE">Female</option>
-                           </select>
-                         </div>
-                         <div class="element">
-                                <input  value ="343" placeholder="nationalID" class="form-control" type="text" name="" id="r_nationalId">
+<div  class="register i-container" id="register">    
+    <div class="register-widget">
+      
+         <div class="register-subsection"> 
+             <section class="widget s-widget">
+                   <form role="form" data-toggle="validator">
+                       <div class="row ">
+                            <h3 class="col-md-12">Regesteration</h3>
+                       </div>
+                      <div class="row field-spacing">
+                          <div class="col-md-4">
+                                <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input id ="txtfirstname" placeholder="First name" type="text"> </div>
                           </div>
-                   <div class="element">
-                      <input value="we" placeholder="username" class="form-control" type="text" name="" id="r_username">
-                   </div>
-                   <div class="element">
-                      <input value =343 placeholder="password" class="form-control" type="text" name="" id="r_password">
-                   </div>
-                   <div class="element register-action">
-                      <input id ="btncancelRegister" class="btn btn-default" type="button" value="Cancel">                     
-                      <input id="btnregister" class="btn btn-primary btnregister" type="button" value="Register">
-                   </div>
-                </form>
-             
-           
+                          <div class="col-md-4">
+                                <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input id ="txtmiddlename" placeholder="Middle name" type="text"> </div>
+                          </div>
+                          <div class="col-md-4">
+                                <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input id ="txtsurname" placeholder="Surname name" type="text"> </div>
+                          </div>
+                        </div>
+                          <div class="row field-spacing">
+                               <div class="col-md-6"> <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input id ="txtnickname" placeholder="Nick name" type="text"> </div></div>
+                          </div>
+                          <div class="row field-spacing" id ="gender-radios">
+                                <div class="col-md-7"> 
+                                   <i class="fab fa-accessible-icon"></i>
+                                    <span>Gender</span> 
+                                    <div class="align-inline">                                      
+                                         <div class="flex-row">
+                                                <label class="radiocontainer">Male
+                                                        <input checked value="MALE"  name="gender" type="radio">
+                                                        <span class="checkmark"></span>
+                                                      </label>
+                                                      
+                                                      <label class="radiocontainer">Female
+                                                        <input value="FEMALE" name="gender" type="radio">
+                                                        <span class="checkmark"></span>
+                                                      </label>                             
+                                         </div>
+                           </div>
+                      </div>
+                    </div>
+                     <div class="row field-spacing">
+                            <div class="col-md-12">
+                                <i class="fab fa-accessible-icon"></i> 
+                                <spa> Date of Birth</spa>
+                                <input type="" name="" id="dateofbirth">
+                         </div>
 
+                     </div>
+
+                     <div class="row field-spacing">
+                            <div class="col-md-12">
+                                    <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input id ="txtnationalid" placeholder="National Id" type="number"> </div>
+                         
+                            </div>   
+                        </div>
+
+                        <div class="row field-spacing">
+                                <div class="col-md-6">
+                                        <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input id ="txtphoneno" placeholder="Phone (optional)" type="text"> </div>
+                             
+                                </div>  
+                                <div class="col-md-6">
+                                        <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input id ="txtmail" placeholder="Email (optional)" type="email"> </div>
+                                </div>   
+                            </div>
+                            
+                            <div class="row field-spacing">
+                                    <div class="col-md-12">
+                                            <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input  id ="txtusername" placeholder="Username" type="text"> </div>
+                                 
+                                    </div>   
+                                </div>
+                                <div class="row field-spacing">
+                                        <div class="col-md-6">
+                                                <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input id ="txtpassword" placeholder="Password" type="text"> </div>
+                                     
+                                        </div>   
+                                        <div class="col-md-6">
+                                                <div class="txt-style"><i class="fab fa-accessible-icon"></i> <input id ="txtpasswordrepeat" placeholder="Repeat Password" type="text"> </div>
+                                     
+                                        </div>   
+                                </div>
+                                <div class="row field-spacing">
+                                        <div class="col-md-6">                                             
+                                             <input class="btn" type="button" value="Cancel">
+                                             <input class="btn btn-primary btnregister" type="button" value="Register">
+                                        </div>   
+                                        
+                                </div>
+                   </form>
+             </section>
+        
+        </div>              
+    </div>
 </div>

@@ -1,20 +1,30 @@
-<div class="login i-container" id="login">
-
+<div class="login i-container " id="login">
+    
+   <div class="boxshadow  details" style="display:flex;padding: 7px;align-items: center;">
+   <div>
+            <div class="login-clrcle">
+                  <i style="font-size:70px" class="far fa-user"></i>
+            </div>
+      </div>
+     
    <form class="login-section form-group">
       <div class="element">
-         <h3>Please sign up or log in</h3>
+         <h3>Member Sign In</h3>
       </div>
-      <div class="element">
-         <input class="form-control" type="text" name="" id="txtUsername">
+      <div class="element input">
+            <i class="fas fa-user-lock"></i>
+             <input placeholder="Username" class="control" type="text" name="" id="txtUsername"> 
       </div>
-      <div class="element">
-         <input class="form-control" type="text" name="" id="txtPassword">
+      <div class="element input">
+            <i class="fas fa-unlock"></i>
+            <input placeholder="Password" class="control" type="password" name="" id="txtPassword">
       </div>
       <div class="element login-action">
-         <input id ="btnlogin" class="btn btn-primary" type="button" value="Login">
+         <input id ="btnlogin" class="" type="button" value="Login">
         
-         <input onclick="return OpenRegisterPage()" class="btnRegister" style="margin-top:10px" class="btn btn-default" type="button" value="Register">
+         <a onclick="return OpenRegisterPage()" class="btnRegister" style="margin-top:10px" class="" type="button" >Or you can Register</a>
       </div>
    </form>
-
+</div>
+   
 </div> 

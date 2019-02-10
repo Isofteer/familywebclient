@@ -7,6 +7,7 @@
     "lib": "lib"
   },
   "dependencies": {
+    "animejs": "^3.0.1",
     "lite-server": "^2.4.0"
   },
   "devDependencies": {},
